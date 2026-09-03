@@ -1,59 +1,85 @@
-# Notify
+# 🔔 Notify
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.6.
+> A simple, clean, and lightweight productivity app to manage your notes, tasks, and alerts — all in one place.
 
-## Development server
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## 📖 About
+
+**Notify** is a front-end only productivity tool designed to help you stay organized without the clutter. Whether you need to jot down a quick note, track your tasks, or set a reminder, Notify keeps it simple and distraction-free.
+
+> **Made with ❤️ by Youssef Amr**
+
+---
+
+## ✨ Features
+
+- 📝 **Notes** – Create and delete text notes instantly.
+- ✅ **Tasks** – Add tasks, mark them as complete, and optionally attach an alert.
+- ⚠️ **Alerts** – Set standalone alerts with visual notifications.
+- 📊 **Dashboard** – View all your counts and recent activity at a glance.
+- 👤 **About Page** – Credits and app information.
+- 💾 **Persistent Storage** – Data is saved using `localStorage` (optional).
+- 📱 **Responsive** – Works seamlessly on desktop and mobile devices.
+
+---
+## 🛠️ Tech Stack
+
+- **HTML5** – Semantic structure
+- **CSS3** – Clean, modern styling with Flexbox/Grid
+- **JavaScript (Vanilla)** – All logic and interactivity
+- **Font Awesome** – Icons for better UX
+
+---
+
+## 📁 Project Structure
+
+```
+notify-app/
+│
+├── index.html          # Main HTML file
+├── styles.css          # All styling
+├── script.js           # All JavaScript logic
+└── README.md           # Project documentation
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧩 How It Works
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. **Dashboard** – Displays total counts for notes, tasks, and alerts, along with recent activity.
+2. **Notes** – Add a note using the input field. Each note appears in a list with a delete option.
+3. **Tasks** – Add a task. Toggle the alert checkbox to set a reminder. Mark tasks as done or delete them.
+4. **Alerts** – Create standalone alerts. When added, a notification appears (simulated with a toast/modal).
+5. **About** – Learn more about the developer.
 
-```bash
-ng generate component component-name
-```
+---
+## 📄 License
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 👨‍💻 Developer
 
-To build the project run:
+**Youssef Amr**
 
-```bash
-ng build
-```
+- GitHub: [@Youssef Amr | The Solo Dev](https://github.com/Youssef-amr-TheSoloDev)
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🙏 Acknowledgments
 
-## Running unit tests
+- Font Awesome for the icons
+- Inspiration from minimal productivity tools
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+<p align="center">Made with ☕ and focus by Youssef Amr</p>
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Let me know if you want a shorter version, a specific section removed, or if you want me to add badges, contribution guidelines, or a license file next.
