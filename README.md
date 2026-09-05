@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🔔 Notify - Productivity App
 
 A simple, clean, and lightweight productivity tool to manage your notes, tasks, and alerts — all in one place.
@@ -24,6 +23,9 @@ A simple, clean, and lightweight productivity tool to manage your notes, tasks, 
 ## Team Members
 
 - Youssef Amr
+- ملك غانم محمد السيد
+- يوسف محمد عبد الوهاب عبد الباسط
+- محمد عمادالدين سعداوى حسين سعداوى
 - Team 5
 
 ---
@@ -107,60 +109,9 @@ notify-app/
 ├── package.json
 ├── tsconfig.json
 └── README.md
-=======
-# 🔔 Notify
-
-> A simple, clean, and lightweight productivity app to manage your notes, tasks, and alerts — all in one place.
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-
----
-
-## 📖 About
-
-**Notify** is a front-end only productivity tool designed to help you stay organized without the clutter. Whether you need to jot down a quick note, track your tasks, or set a reminder, Notify keeps it simple and distraction-free.
-
-> **Made with ❤️ by Youssef Amr**
-
----
-
-## ✨ Features
-
-- 📝 **Notes** – Create and delete text notes instantly.
-- ✅ **Tasks** – Add tasks, mark them as complete, and optionally attach an alert.
-- ⚠️ **Alerts** – Set standalone alerts with visual notifications.
-- 📊 **Dashboard** – View all your counts and recent activity at a glance.
-- 👤 **About Page** – Credits and app information.
-- 💾 **Persistent Storage** – Data is saved using `localStorage` (optional).
-- 📱 **Responsive** – Works seamlessly on desktop and mobile devices.
-
----
-## 🛠️ Tech Stack
-
-- **HTML5** – Semantic structure
-- **CSS3** – Clean, modern styling with Flexbox/Grid
-- **JavaScript (Vanilla)** – All logic and interactivity
-- **Font Awesome** – Icons for better UX
-
----
-
-## 📁 Project Structure
-
-```
-notify-app/
-│
-├── index.html          # Main HTML file
-├── styles.css          # All styling
-├── script.js           # All JavaScript logic
-└── README.md           # Project documentation
->>>>>>> 1627d109515a82b76cc4f896111856a2f58181b1
 ```
 
 ---
-
-<<<<<<< HEAD
 ## How It Works
 
 1. Dashboard – Displays total counts for notes, tasks, and alerts, along with recent activity
@@ -256,7 +207,10 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 ## أعضاء الفريق
 
 - يوسف عمرو
-- فريق 5
+- ملك غانم محمد السيد
+- يوسف محمد عبد الوهاب عبد الباسط
+- محمد عمادالدين سعداوى حسين سعداوى
+- فريق 5 -
 
 ---
 
