@@ -399,4 +399,3 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ---
 
 Let me know if you want a shorter version, a specific section removed, or if you want me to add badges, contribution guidelines, or a license file next.
->>>>>>> 1627d109515a82b76cc4f896111856a2f58181b1
