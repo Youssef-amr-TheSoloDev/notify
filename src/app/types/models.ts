@@ -1,5 +1,23 @@
-export type IconName = 'dashboard' | 'notes' | 'tasks' | 'alerts' | 'about' | 'moon' | 'sun' | 'plus' | 'trash' | 'edit' | 'clock' | 'check' | 'x' | 'menu' | 'grid' | 'list';
-
+export type IconName =
+  | 'dashboard'
+  | 'notes'
+  | 'tasks'
+  | 'alerts'
+  | 'about'
+  | 'moon'
+  | 'sun'
+  | 'plus'
+  | 'trash'
+  | 'edit'
+  | 'clock'
+  | 'check'
+  | 'x'
+  | 'menu'
+  | 'grid'
+  | 'list'
+  | 'chart'
+  | 'arrowRight'
+  | 'inbox';
 export interface Note {
   id: number;
   title: string;
@@ -14,6 +32,7 @@ export interface Task {
   title: string;
   due: string;
   completed: boolean;
+  Priority: string
 }
 
 export interface AlertItem {

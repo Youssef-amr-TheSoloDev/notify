@@ -10,11 +10,11 @@ const seedNotes: Note[] = [
   { id: 6, title: 'Travel Plans', body: 'Vacation ideas for the summer.', date: 'May 18, 2025', time: '11:00 AM', tone: 'yellow' },
 ];
 const seedTasks: Task[] = [
-  { id: 1, title: 'Buy groceries', due: 'May 22, 2025 5:00 PM', completed: false },
-  { id: 2, title: 'Finish the report', due: 'May 21, 2025 11:00 AM', completed: false },
-  { id: 3, title: 'Workout', due: 'May 20, 2025 6:00 PM', completed: true },
-  { id: 4, title: 'Call mom', due: 'No reminder', completed: false },
-  { id: 5, title: 'Read 20 pages', due: 'May 19, 2025 9:00 PM', completed: true },
+  { id: 1, title: 'Buy groceries', due: 'May 22, 2025 5:00 PM', completed: false, Priority: 'Low' },
+  { id: 2, title: 'Finish the report', due: 'May 21, 2025 11:00 AM', completed: false, Priority: 'Medium' },
+  { id: 3, title: 'Workout', due: 'May 20, 2025 6:00 PM', completed: true, Priority: 'Low' },
+  { id: 4, title: 'Call mom', due: 'No reminder', completed: false, Priority: 'High' },
+  { id: 5, title: 'Read 20 pages', due: 'May 19, 2025 9:00 PM', completed: true, Priority: 'Medium' },
 ];
 const seedAlerts: AlertItem[] = [
   { id: 1, title: 'Drink water', date: 'May 21, 2025 2:00 PM', tone: 'purple' },
@@ -40,8 +40,8 @@ export class NotifyDataService {
     const notes = [{ id: Date.now(), title, body, date: 'Today', time: 'Now', tone: 'blue' as const }, ...this.notes()];
     this.notes.set(notes); this.save('notify-notes', notes);
   }
-  addTask(title: string, due = '') {
-    const tasks = [...this.tasks(), { id: Date.now(), title, due, completed: false }];
+  addTask(title: string, due = '', priority: string) {
+    const tasks = [...this.tasks(), { id: Date.now(), title, due, completed: false, Priority: priority }];
     this.tasks.set(tasks); this.save('notify-tasks', tasks);
   }
   addAlert(title: string, date: string) {
@@ -52,8 +52,8 @@ export class NotifyDataService {
     const notes = this.notes().map(note => note.id === id ? { ...note, title, body } : note);
     this.notes.set(notes); this.save('notify-notes', notes);
   }
-  updateTask(id: number, title: string, due: string) {
-    const tasks = this.tasks().map(task => task.id === id ? { ...task, title, due } : task);
+  updateTask(id: number, title: string, due: string, Priority: string) {
+    const tasks = this.tasks().map(task => task.id === id ? { ...task, title, due, Priority } : task);
     this.tasks.set(tasks); this.save('notify-tasks', tasks);
   }
   updateAlert(id: number, title: string, date: string) {
